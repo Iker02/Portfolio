@@ -1,0 +1,729 @@
+body {
+    font-family: 'Open Sans', sans-serif; /* Sets font family for the body */
+    background-color: rgb(16,16,16); /* Sets background color */
+    color: #fff; /* Sets text color */
+    margin: 0; /* Resets margin */
+    padding: 0; /* Resets padding */
+    line-height: 1.6; /* Sets line height */
+}
+
+.container {
+    max-width: 1200px; /* Sets maximum width for the container */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 20px; /* Adds padding inside the container */
+    width: 1200px;
+}
+
+.brand {
+    font-size: 24px; /* Sets font size for the brand text */
+}
+
+header {
+    background-color: hsl(240, 2%, 12%); /* Sets background color for header */
+    color: #fff; /* Sets text color for header */
+    padding: 20px; /* Adds padding inside the header */
+    border-bottom: 2px solid #fbbf24; /* Adds bottom border to header */
+    display: flex; /* Displays header as a flex container */
+    justify-content: space-between; /* Aligns items with space between them */
+    align-items: center; /* Aligns items in the center vertically */
+    border-radius: 18px; /* Adds border radius to header */
+}
+
+
+.header-button img {
+    width: 16px; /* Sets width for header button images */
+    height: auto; /* Sets height to auto for header button images */
+}
+
+.header-button {
+    padding: 5px; /* Adds padding around header buttons */
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none; /* Removes default list style */
+    margin: 0; /* Resets margin */
+    padding: 0; /* Resets padding */
+    display: flex; /* Displays navigation items as flex items */
+}
+
+nav ul li {
+    margin-right: 20px; /* Adds right margin to navigation items */
+    font-size: 12px; /* Sets font size for navigation items */
+    text-transform: uppercase; /* Transforms text to uppercase */
+    cursor: pointer; /* Changes cursor to pointer */
+    transition: all 0.3s ease; /* Adds transition effect */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline from anchor tags */
+    color: inherit; /* Inherits color from parent element */
+}
+
+/* Agrega estilos para el elemento activo */
+nav ul li.active {
+    background-color: #337ab7; /* Cambia el color de fondo activo a tu elección */
+    color: #fff; /* Cambia el color del texto activo a tu elección */
+}
+
+
+nav ul li:hover {
+    color: #fbbf24; /* Changes text color on hover */
+}
+
+.titulo-seccion {
+    color: #ffffff; /* Cambia el color del texto del título */
+    margin-bottom: 10px; /* Añade espacio debajo del título */
+}
+
+.resaltado {
+    font-weight: bold; /* Hace que el texto resaltado sea negrita */
+    color: #fbbf24; /* Cambia el color del texto resaltado */
+}
+
+.subir {
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+}
+
+/* Estilos para la lista de habilidades */
+.skills-list {
+    list-style: none;
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.4); /* Ajusta la sombra para que sea más pronunciada */
+    padding-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 30px;
+    border-radius: 18px; /* Ajusta el radio del borde según tu preferencia */
+    margin-bottom: 50px; /* Añade espacio debajo del contenedor */
+    background-color: #1b1b1b;
+}
+
+.main-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.introduction {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding-left: 10px; /* Añade un espacio entre el borde y el texto */
+    border-left: 5px solid #ffc107; /* Borde amarillo a la izquierda */
+}
+
+#experience h2,
+#education h2,
+#skills h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ul.project-list{
+    display: flex;
+    list-style-type: disc;
+    margin-left: 20px;
+    gap: 10px;
+    flex-direction: column;
+}
+
+ul.educaciones-list{
+    display: flex;
+    list-style-type: disc;
+    margin-left: 20px;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.project-list li {
+    background: #444;
+    padding: 5px;
+    border-left: 5px solid #FFD700;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.educaciones-list li {
+    background: #444;
+    padding: 5px;
+    border-left: 5px solid #FFD700;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+#skills ul li {
+    margin-bottom: 10px;
+}
+
+
+/* Estilos para cada habilidad */
+.skills-item {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+/* Estilos para el título de la habilidad */
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para la barra de progreso de habilidades */
+.skill-progress-bg {
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-progress-fill {
+    height: 100%;
+    background-color: #fbbf24; /* Cambia el color de la barra de progreso según tu preferencia */
+}
+
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+textarea {
+    width: 700px; /* Establece el ancho al 100% del contenedor */
+    padding: 10px; /* Añade espacio dentro de los campos de entrada */
+    margin-bottom: 10px; /* Añade espacio debajo de los campos de entrada */
+    border: 1px hsla(0, 0%, 100%, 0.75); /* Añade un borde alrededor de los campos de entrada */
+    border-radius: 5px; /* Agrega bordes redondeados a los campos de entrada */
+    box-sizing: border-box; /* Incluye el borde en el cálculo del ancho */
+    background-color: #333;
+    color: #fff;
+    
+}
+
+/* Estilos para el botón */
+.btn-primary {
+    background-color: #333  ; /* Cambia el color de fondo del botón */
+    color: #fff; /* Cambia el color del texto del botón */
+    padding: 10px 20px; /* Añade espacio alrededor del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Agrega bordes redondeados al botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+}
+
+/* Estilos para el botón al pasar el cursor */
+.btn-primary:hover {
+    background-color: #0056b3; /* Cambia el color de fondo del botón al pasar el cursor */
+}
+
+
+main {
+    display: flex; /* Displays main content as flex items */
+    margin-top: 40px; /* Adds top margin to main content */
+}
+
+.legend {
+    margin-top: 30px; /* Adds top margin to legends */
+    display: block; /* Displays legends as block elements */
+    border-style: none; /* Removes border style */
+    border-color: transparent; /* Sets border color to transparent */
+    text-align: center; /* Aligns text in the center */
+    background-color: #333; /* Sets background color for legends */
+    color: #fff; /* Sets text color for legends */
+    padding: 20px; /* Adds padding inside legends */
+    border-top: 3px solid #000000; /* Adds top border to legends */
+    max-width: 1000px; /* Sets maximum width for legends */
+    margin-left: auto; /* Centers legends horizontally */
+    margin-right: auto; /* Centers legends horizontally */
+    border-radius: 18px; /* Adds border radius to legends */
+}
+
+
+.legend1 {
+    margin-top: 30px; /* Adds top margin to legends */
+    display: block; /* Displays legends as block elements */
+    border-style: none; /* Removes border style */
+    border-color: transparent; /* Sets border color to transparent */
+    text-align: center; /* Aligns text in the center */
+    background-color: #333; /* Sets background color for legends */
+    color: #fff; /* Sets text color for legends */
+    padding: 20px; /* Adds padding inside legends */
+    border-top: 3px solid #000000; /* Adds top border to legends */
+    max-width: 1000px; /* Sets maximum width for legends */
+    margin-left: auto; /* Centers legends horizontally */
+    margin-right: auto; /* Centers legends horizontally */
+    border-radius: 18px; /* Adds border radius to legends */
+}
+
+fieldset {
+    display: block;
+    border-color: transparent;
+    border-image: initial;
+    border-style: hidden; /* Consider removing 'pointer-events: none;' if it was causing issues */
+}
+.fieldset1 {
+    display: block;
+    border-color: transparent;
+    border-image: initial;
+    border-style: hidden; /* Consider removing 'pointer-events: none;' if it was causing issues */
+}
+
+/* Estilos para el contenedor div */
+div.profile-info-text {
+    font-family: Arial, sans-serif; /* Define la fuente */
+    font-size: 16px; /* Tamaño de la fuente */
+    color: #ffffff; /* Color del texto */
+}
+
+/* Estilos para los elementos dentro del contenedor div */
+div.profile-info-text > div {
+    margin-bottom: 10px; /* Espacio entre elementos */
+}
+
+/* Estilos específicos para el enlace de descarga del CV */
+div.profile-info-text a {
+    color: #000000; /* Color del enlace */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center;
+    border: #1b1b1b;
+    background: #fbbf24;
+}
+
+.CV-text{
+    color: #fbbf24; /* Color del enlace */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center;
+    border: #1b1b1b;
+    background: #fbbf24;
+    border-radius: 10px;
+}
+
+/* Estilos para cambiar el color del enlace al pasar el mouse sobre él */
+div.profile-info-text a:hover {
+    color: #bbbbbb; /* Color del enlace al pasar el mouse sobre él */
+}
+
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    position: sticky;
+    top: 35px;
+    width: fit-content;
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.4); 
+    padding: 1%; /* Adds padding inside sections */
+    border-radius: 18px; /* Adds border radius to sections */
+    background: var(--eerie-black-2);
+    border: 1px hsla(0, 0%, 0%, 0.75);
+}
+
+
+/* Cambia el color del scrollbar */
+::-webkit-scrollbar {
+    width: 0px; /* Ancho del scrollbar */
+  }
+  
+  /* Cambia el color del track del scrollbar (el fondo detrás del thumb) */
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  /* Cambia el color y el estilo del thumb del scrollbar (el control deslizante) */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  
+  /* Cambia el color del thumb cuando se desplaza */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+.profile-info img {
+    width: 164px; /* Sets width for profile images */
+    height: 231px; /* Sets height for profile images */
+    margin-bottom: 20px; /* Adds bottom margin to profile images */
+    border-bottom: solid #fbbf24; /* Adds bottom border to profile images */
+}
+.profile-info div {
+    margin-bottom: 10px; /* Adds bottom margin to profile info divs */
+}
+.profile-info i {
+    margin-right: 10px; /* Adds right margin to profile info icons */
+    font-size: 24px; /* Sets font size for profile info icons */
+    color: #fff; /* Sets color for profile info icons */
+}
+.about-me {
+    padding-left: 5%; /* Adds left padding to about-me section */
+    margin-left: 5%; /* Adds left margin to about-me section */
+    max-width: auto; /* Sets maximum width for about-me section */
+    padding-right: 5%;
+    margin-right: 5%;
+    padding: 5%; /* Adds padding inside sections */
+    border-radius: 18px; /* Adds border radius to sections */
+    background: var(--eerie-black-2);
+    border: 1px hsla(240, 1%, 17%, 0.75);
+}
+.about-me h1 {
+    font-size: 24px; /* Sets font size for about-me section headings */
+    margin-bottom: 10px; /* Adds bottom margin to about-me section headings */
+    color: #fff; /* Sets color for about-me section headings */
+}
+
+.textito {
+    border-left: 5px solid #fbbf24; /* Adds left border to about-me paragraphs */
+    margin-bottom: 20px; /* Adds bottom margin to about-me paragraphs */
+    color: #ddd; /* Sets color for about-me paragraphs */
+    padding-left: 3%; /* Adds left padding to about-me paragraphs */
+}
+
+-------------------------------------------------------------------
+.container {
+    position: relative;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.navbar-item a.active {
+    color: #fbbf24; 
+}
+
+.about-me {
+    padding-top: 50px; 
+}
+
+
+:root {
+  
+    --bg-gradient-onyx: linear-gradient(
+      to bottom right, 
+      hsl(240, 1%, 25%) 3%, 
+      hsl(0, 0%, 19%) 97%
+    );
+    --bg-gradient-jet: linear-gradient(
+      to bottom right, 
+      hsla(240, 1%, 18%, 0.251) 0%, 
+      hsla(240, 2%, 11%, 0) 100%
+    ), hsl(240, 2%, 13%);
+    --bg-gradient-yellow-1: linear-gradient(
+      to bottom right, 
+      hsl(45, 100%, 71%) 0%, 
+      hsla(36, 100%, 69%, 0) 50%
+    );
+    --bg-gradient-yellow-2: linear-gradient(
+      135deg, 
+      hsla(45, 100%, 71%, 0.251) 0%, 
+      hsla(35, 100%, 68%, 0) 59.86%
+    ), hsl(240, 2%, 13%);
+    --border-gradient-onyx: linear-gradient(
+      to bottom right, 
+      hsl(0, 0%, 25%) 0%, 
+      hsla(0, 0%, 25%, 0) 50%
+    );
+    --text-gradient-yellow: linear-gradient(
+      to right, 
+      hsl(45, 100%, 72%), 
+      hsl(35, 100%, 68%)
+    );
+    
+    --jet: hsl(0, 0%, 22%);
+    --onyx: hsl(240, 1%, 17%);
+    --eerie-black-1: hsl(240, 2%, 13%);
+    --eerie-black-2: hsl(240, 2%, 12%);
+    --smoky-black: hsl(0, 0%, 7%);
+    --white-1: hsl(0, 0%, 100%);
+    --white-2: hsl(0, 0%, 98%);
+    --orange-yellow-crayola: hsl(45, 100%, 72%);
+    --vegas-gold: hsl(45, 54%, 58%);
+    --light-gray: hsl(0, 0%, 84%);
+    --light-gray-70: hsla(0, 0%, 84%, 0.7);
+    --bittersweet-shimmer: hsl(0, 43%, 51%);
+}
+  
+
+.container {    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.about-me {
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    position: relative; /* Para el posicionamiento absoluto del navbar */
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.4); 
+}
+
+
+
+
+.navbar {
+    z-index: 10;
+    position: absolute;
+    top: 8%;
+    right: 13.9%;
+    background: hsla(240, 1%, 18%, 0.75);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--jet);
+    border-radius: 0 18px ;
+    box-shadow: var(--shadow-2);
+}
+
+.navbar-list {
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-item {
+    margin-right: 30px;
+}
+
+.navbar-item img{
+    width: 30px;
+    height: 20px;
+}
+
+.navbar-link {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+.skills {
+    display: flex; /* Displays skills as flex items */
+    justify-content: space-between; /* Aligns items with space between them */
+    margin-top: 20px; /* Adds top margin to skills */
+    border-color: var(--eerie-black-2);
+}
+
+.skill {
+    text-align: center; /* Aligns text in the center */
+    flex-basis: 23%; /* Sets flex basis for skills */
+    padding: 10px; /* Adds padding inside skills */
+    border: none; /* Removes border */
+    border-radius: 6px; /* Adds border radius to skills */
+    transition: all 0.3s ease; /* Adds transition effect */
+    position: relative; /* Sets position to relative */
+    overflow: hidden; /* Hides overflow */
+}
+
+.skill img {
+    width: 100%; /* Makes images fill the entire width */
+    height: 100%; /* Makes images fill the entire height */
+    object-fit: cover; /* Scales images to cover the entire container */
+}
+
+.skill:hover {
+    transform: scale(1.3); /* Scales up the skill on hover */
+    z-index: 1; /* Sets z-index to 1 on hover */
+}
+
+.skill:hover img {
+    z-index: 2; /* Sets z-index to 2 for image on hover */
+}
+-----------------------------------------
+
+div {
+    display: block;
+}
+
+.ronaldinho-section {
+    /* Estilos específicos para el contenedor ronaldinho-section */
+    padding: 10px; /* Añade relleno alrededor del contenido */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.4); 
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 328px;
+    height: 130px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+.ronaldinhos {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.ronaldinho {
+    width: 98%;
+    height: auto;
+    display: inline-flex; /* Cambiamos a inline-flex */
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.imagen {
+    max-width: 20%; /* Ancho máximo de la imagen */
+    height: 30%; /* Altura ajustada automáticamente */
+    margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+.ronaldinho-text-title{
+    margin-bottom: 7px;
+}
+.ronaldinho-text {
+    text-align: center; /* Alinea el texto al centro */
+}
+
+
+
+.People {
+    display: flex; /* Displays people as flex items */
+    justify-content: space-between; /* Aligns items with space between them */
+    margin-top: 20px; /* Adds top margin to people */
+    overflow-x: auto; /* Adds horizontal scroll */
+    white-space: nowrap; /* Prevents wrapping of items */
+}
+
+/* Styles for the large modal */
+.recuadro {
+    display: none; /* Hide the modal initially */
+    position: fixed;
+    z-index: 10;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9); /* Dark background */
+}
+
+.imagen-grande {
+    margin: auto;
+    display: block;
+    max-width: 80%; /* Maximum width for the large image */
+    max-height: 80%; /* Maximum height for the large image */
+}
+
+/* Styles for the small image */
+.profile-pic {
+    width: 50px; /* Width of the small image */
+    height: 50px; /* Height of the small image */
+    border-radius: 50%; /* Rounded border */
+    margin-right: 10px; /* Right margin */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.person {
+    text-align: center; /* Aligns text in the center */
+    flex-basis: 23%; /* Sets flex basis for people */
+    padding: 10px; /* Adds padding inside people */
+    border: 1px solid #ddd; /* Adds border */
+    border-radius: 6px; /* Adds border radius */
+    background-color: #555; /* Sets background color */
+    transition: all 0.3s ease; /* Adds transition effect */
+    position: relative; /* Sets position to relative */
+    overflow: hidden; /* Hides overflow */
+}
+
+.person img {
+    width: 100%; /* Makes images fill the entire width */
+    height: 100%; /* Makes images fill the entire height */
+    object-fit: cover; /* Scales images to cover the entire container */
+}
+
+.testimonial-container {
+    display: flex; /* Displays testimonial container as flex items */
+    justify-content: flex-start; /* Aligns items at the start */
+    overflow-x: auto; /* Adds horizontal scroll */
+    white-space: nowrap; /* Prevents wrapping of items */
+    max-width: 800px; /* Sets maximum width for testimonial container */
+}
+
+.testimonial {
+    background: #ffffff; /* Sets background color for testimonials */
+    border-radius: 10px; /* Adds border radius to testimonials */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds box shadow to testimonials */
+    padding: 20px; /* Adds padding inside testimonials */
+    width: 40%; /* Sets width for testimonials */
+    margin: 10px; /* Adds margin around testimonials */
+    margin-bottom: 30px; /* Adds bottom margin to testimonials */
+    margin-top: 25px; /* Adds top margin to testimonials */
+}
+
+.profile-pic {
+    width: 50px; /* Sets width for profile pictures */
+    height: 50px; /* Sets height for profile pictures */
+    border-radius: 50%; /* Adds border radius to profile pictures */
+    margin-right: 10px; /* Adds right margin to profile pictures */
+}
+
+.testimonial-text {
+    color: #333; /* Sets text color for testimonials */
+    font-size: 14px; /* Sets font size for testimonials */
+}
+
+.name {
+    font-weight: bold; /* Sets font weight to bold for names */
+    font-size: 16px; /* Sets font size for names */
+}
+
+.role {
+    color: #666; /* Sets color for roles */
+    font-size: 14px; /* Sets font size for roles */
+}
+
+.testimonials {
+    margin-top: 20px; /* Adds top margin to testimonials */
+}
+
+.testimonial {
+    text-align: center; /* Aligns text in the center */
+    padding: 55px; /* Adds padding inside testimonials */
+    border: 1px solid #ddd; /* Adds border around testimonials */
+    border-radius: 6px; /* Adds border radius to testimonials */
+    background-color: #555; /* Sets background color for testimonials */
+    margin-bottom: 20px; /* Adds bottom margin to testimonials */
+    width: 200px; /* Sets width for testimonials */
+    height: 100px; /* Sets height for testimonials */
+}
+
+.testimonial h3 {
+    font-size: 18px; /* Sets font size for testimonial headings */
+    margin-bottom: 10px; /* Adds bottom margin to testimonial headings */
+    color: #fff; /* Sets text color for testimonial headings */
+}
+
+.testimonial p {
+    color: #ddd; /* Sets text color for testimonials */
+}
+
+.clients {
+    margin-top: 20px; /* Adds top margin to clients */
+    display: flex; /* Displays clients as flex items */
+    justify-content: space-between; /* Aligns items with space between them */
+    align-items: center; /* Aligns items in the center vertically */
+}
+
+.clients img {
+    opacity: 0.7; /* Sets initial opacity for client images */
+}
+
+.clients img:hover {
+    opacity: 1; /* Sets opacity for client images on hover */
+}
+
