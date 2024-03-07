@@ -183,21 +183,20 @@ function showAboutMe() {
             </section>
         </main>
     </div>
-    <div id="map"></div> 
     `;
 }
 
 function showMap() {
     var mapDiv = document.createElement('div'); 
     mapDiv.setAttribute('id', 'map'); 
-    mapDiv.style.width = '700px'; 
+    mapDiv.style.width = '100%'; 
     mapDiv.style.height = '450px'; 
     mapDiv.style.borderRadius = '20px';
     mapDiv.style.overflow = 'hidden'; 
 
     var mapContainer = document.querySelector('.about-me');
     mapContainer.innerHTML = ''; 
-    mapContainer.style.width = '1000px';
+    mapContainer.style.width = '1100px';
     mapContainer.style.height = 'auto';
     
     var contactTitle = document.createElement('h1');

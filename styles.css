@@ -7,11 +7,12 @@ body {
     line-height: 1.6; /* Sets line height */
 }
 
+
+
 .container {
-    max-width: 1200px; /* Sets maximum width for the container */
     margin: 0 auto; /* Centers the container horizontally */
     padding: 20px; /* Adds padding inside the container */
-    width: 1200px;
+    width: 100%;
 }
 
 .brand {
@@ -193,7 +194,7 @@ ul.educaciones-list{
 /* Estilos para los campos de entrada */
 input[type="text"],
 textarea {
-    width: 700px; /* Establece el ancho al 100% del contenedor */
+    width: 100%; /* Establece el ancho al 100% del contenedor */
     padding: 10px; /* Añade espacio dentro de los campos de entrada */
     margin-bottom: 10px; /* Añade espacio debajo de los campos de entrada */
     border: 1px hsla(0, 0%, 100%, 0.75); /* Añade un borde alrededor de los campos de entrada */
@@ -290,7 +291,6 @@ div.profile-info-text a {
     font-weight: bold; /* Texto en negrita */
     text-align: center;
     border: #1b1b1b;
-    background: #fbbf24;
 }
 
 .CV-text{
@@ -322,6 +322,7 @@ div.profile-info-text a:hover {
     border-radius: 18px; /* Adds border radius to sections */
     background: var(--eerie-black-2);
     border: 1px hsla(0, 0%, 0%, 0.75);
+    margin-left: 150px;
 }
 
 
@@ -362,14 +363,17 @@ div.profile-info-text a:hover {
 }
 .about-me {
     padding-left: 5%; /* Adds left padding to about-me section */
-    margin-left: 5%; /* Adds left margin to about-me section */
-    max-width: auto; /* Sets maximum width for about-me section */
+    margin-left: 20px; /* Adds left margin to about-me section */
     padding-right: 5%;
-    margin-right: 5%;
+    margin-right: 10%;
     padding: 5%; /* Adds padding inside sections */
     border-radius: 18px; /* Adds border radius to sections */
     background: var(--eerie-black-2);
     border: 1px hsla(240, 1%, 17%, 0.75);
+    padding-top: 50px; 
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    position: relative; /* Para el posicionamiento absoluto del navbar */
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.4); 
 }
 .about-me h1 {
     font-size: 24px; /* Sets font size for about-me section headings */
@@ -400,9 +404,6 @@ div.profile-info-text a:hover {
     color: #fbbf24; 
 }
 
-.about-me {
-    padding-top: 50px; 
-}
 
 
 :root {
@@ -459,20 +460,12 @@ div.profile-info-text a:hover {
     align-items: flex-end;
 }
 
-.about-me {
-    width: 100%; /* Ajusta el ancho según sea necesario */
-    position: relative; /* Para el posicionamiento absoluto del navbar */
-    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.4); 
-}
-
-
-
 
 .navbar {
     z-index: 10;
     position: absolute;
-    top: 8%;
-    right: 13.9%;
+    top: 8.3%;
+    right: 8.7%;
     background: hsla(240, 1%, 18%, 0.75);
     backdrop-filter: blur(10px);
     border: 1px solid var(--jet);
@@ -509,18 +502,21 @@ div.profile-info-text a:hover {
 
 
 .skills {
-    display: flex; /* Displays skills as flex items */
-    justify-content: space-between; /* Aligns items with space between them */
-    margin-top: 20px; /* Adds top margin to skills */
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
     border-color: var(--eerie-black-2);
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
 }
 
 .skill {
+    display: grid;
     text-align: center; /* Aligns text in the center */
-    flex-basis: 23%; /* Sets flex basis for skills */
+    flex-basis: 22%; /* Sets flex basis for skills */
     padding: 10px; /* Adds padding inside skills */
     border: none; /* Removes border */
-    border-radius: 6px; /* Adds border radius to skills */
     transition: all 0.3s ease; /* Adds transition effect */
     position: relative; /* Sets position to relative */
     overflow: hidden; /* Hides overflow */
@@ -530,6 +526,7 @@ div.profile-info-text a:hover {
     width: 100%; /* Makes images fill the entire width */
     height: 100%; /* Makes images fill the entire height */
     object-fit: cover; /* Scales images to cover the entire container */
+    border-radius: 10px;
 }
 
 .skill:hover {
@@ -540,6 +537,48 @@ div.profile-info-text a:hover {
 .skill:hover img {
     z-index: 2; /* Sets z-index to 2 for image on hover */
 }
+
+
+.bn632-hover {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 40px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn19 {
+    background-image: linear-gradient(
+      to right,
+      #f5ce62,
+      #e43603,
+      #fa7199,
+      #e85a19
+    );
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+  }
 -----------------------------------------
 
 div {
@@ -555,8 +594,9 @@ div {
     flex-wrap: wrap;
     width: 328px;
     height: 130px;
-    margin-right: 20px;
+    margin-right: 29px;
     margin-top: 20px;
+    margin-left: 21px;
 }
 
 
@@ -727,3 +767,83 @@ div {
     opacity: 1; /* Sets opacity for client images on hover */
 }
 
+@media (max-width: 767px) { 
+    main {
+        width: auto;
+        position: relative;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .profile-info {
+        display: none;
+    }
+    .container{
+        padding: 0;
+        margin: 0;
+    }
+    .about-me{
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        padding-top: 0;
+        margin-top: 17%;
+    }
+    
+    .skills {
+        display: grid; /* Cambia la dirección del contenedor de habilidades a grid */
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Establece el número de columnas y su tamaño */
+        grid-gap: 0; /* Elimina el espacio entre las imágenes */
+    }
+    .skills-list{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .skill img {
+        width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+    }
+    
+    
+    .skill {
+        width: fit-content; /* Establece el ancho del contenedor de habilidades según el contenido */
+        margin: 10px; /* Agrega un margen alrededor de cada habilidad */
+    }
+    .navbar {
+        order: -1; /* Coloca la navbar arriba del todo */
+        position: fixed; /* Fija la posición de la navbar */
+        width: 100%; /* Establece el ancho al 100% */
+        z-index: 10; /* Ajusta el índice z para que esté por encima del contenido */
+    }
+
+    /* Ajusta el top y el right según sea necesario */
+    .navbar {
+        width: 90%;
+        top: 10px;
+        right: 10px;
+        border-radius: 13px;
+    }
+    
+    /* Opcional: ajusta otros estilos de la navbar */
+    .navbar-list {
+        padding: 10px; /* Ajusta el relleno de la lista de navegación */
+        margin: 0; /* Resetea el margen */
+    }
+    
+    .navbar-item {
+        margin-right: 7px; /* Ajusta el margen derecho de los elementos de la navbar */
+        display: flex;
+    }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+@media (min-width: 1200px) {
+
+}
